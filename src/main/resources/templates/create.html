@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<meta charset="UTF-8">
+<title>UserPage</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/todo.css}">
+</head>
+<body>
+ <header class="header fixed">
+  <form method="post" th:action="@{/logout}" name="logout">
+   <a href="javascript:logout.submit()" class="text">ログアウト</a>
+  </form>
+  <div class="border"></div>
+  <a th:href="@{/main}" class="text">カレンダー</a>
+  <div class="border"></div>
+  <a
+   th:href="@{/main/create/{date}(date=${#calendars.format(#calendars.createNow(), 'yyyy-MM-dd')})}"
+   class="text">登録</a>
+ </header>
+
+ <div class="form_back sd">
+  <div class="form sd">
+   <div class="title sd">Regist</div>
+   <div class="form_box sd">
+    <form method="post" th:action="@{/main/create}">
+     <div class="form_row sd">
+      <p class="form_text sd">タイトル：</p>
+      <div class="form_item">
+       <input type="text" name="title" class="item">
+      </div>
+     </div>
+     <div class="form_row sd">
+      <p class="form_text sd">日付：</p>
+      <div class="form_item">
+       <input type="date" name="date"
+        th:value="${#temporals.format(date, 'yyyy-MM-dd')}" class="item">
+      </div>
+     </div>
+     <div class="form_row sd">
+      <p class="form_text sd">内容:</p>
+      <div class="form_item">
+       <textarea name="text" cols="80" rows="10" class="item"></textarea>
+      </div>
+     </div>
+     <button class="form_button sd">
+      <p class="form_button_text sd text">投稿</p>
+     </button>
+    </form>
+   </div>
+  </div>
+ </div>
+</body>
+</html>
+

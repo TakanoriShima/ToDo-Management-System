@@ -1,0 +1,199 @@
+
+@charset "UTF-8";
+
+.sd {
+ max-width: 100%;
+ z-index: 0;
+ pointer-events: all;
+ flex-wrap: nowrap;
+ display: flex;
+ position: relative;
+ flex-direction: column;
+ align-content: center;
+ align-items: center;
+ flex: none;
+}
+
+.header {
+ align-items: center;
+ background: #FFFFFF;
+ box-shadow: 0 2px 5px rgb(0 0 0/ 20%);
+ height: 50px;
+ justify-content: center;
+ left: 0;
+ margin: 0;
+ opacity: 0.9;
+ position: fixed;
+ top: 0;
+ width: 100%;
+ max-width: 100%;
+ display: flex;
+}
+
+.fixed {
+ z-index: 2;
+}
+
+input, button {
+ box-sizing: border-box;
+}
+
+button {
+ cursor: pointer;
+}
+
+.header .border {
+ background: #8ac6d1;
+ flex: none;
+ height: 50%;
+ margin: 0px 20px 0px 20px;
+ width: 1px;
+ max-width: calc(100% - 40px);
+}
+
+.header .text {
+ color: #8ac6d1;
+ font-family: 'Noto Sans JP';
+ font-size: 14px;
+ font-weight: 900;
+ height: auto;
+ letter-spacing: 0.15em;
+ text-decoration: none;
+}
+
+.form_back {
+ background: #bbded6;
+ flex-direction: column;
+ flex-wrap: nowrap;
+ height: 100vh;
+ justify-content: center;
+}
+
+.form {
+ align-items: center;
+ background: #FFFFFF;
+ border-radius: 6px;
+ box-shadow: 0 2px 5px rgb(0 0 0/ 20%);
+ flex-direction: column;
+ justify-content: center;
+ width: 60%;
+}
+
+.form_box_inner {
+ align-content: center;
+ align-items: center;
+ flex: none;
+ flex-direction: column;
+ margin: 0px 0px 15px 0px;
+}
+
+.form_text {
+ color: #666666;
+ flex: none;
+ font-family: 'Noto Sans JP';
+ font-size: 16px;
+ font-weight: 700;
+ width: 20%;
+ flex-direction: row;
+}
+
+.form_row {
+ flex-direction: row;
+ justify-content: center;
+ margin: 0px 0px 15px 0px;
+ width: 100%;
+}
+
+.form .item {
+ background: #FFFFFF;
+ border: 1px solid #8ac6d1;
+ border-radius: 6px;
+ font-family: Lato;
+ padding: 10px 10px 10px 10px;
+ width: 100%;
+}
+
+.form .checkbox {
+ background: #FFFFFF;
+ border: 1px solid #8ac6d1;
+ height: 30px;
+ margin: 0px 0px 10px 0px;
+ width: 40px;
+}
+
+.title {
+ color: #8ac6d1;
+ font-family: 'Noto Sans JP';
+ font-size: 48px;
+ font-weight: 900;
+ letter-spacing: 0.15em;
+ margin: 0px 0px 20px 0px;
+}
+
+.form_button {
+ background: #8ac6d1;
+ border-radius: 4px;
+ box-shadow: 0px 0px 0px 0px rgb(0 0 0/ 20%);
+ margin: 20px auto;
+ padding: 15px;
+ width: 450px;
+}
+
+.form_button.delete {
+ background: #d19b8a;
+}
+
+.form_button_text {
+ border-radius: 0;
+ color: #FFFFFF;
+ font-family: Lato;
+ font-size: 18px;
+ font-weight: 700;
+ letter-spacing: 0.15em;
+ line-height: 1;
+ margin: 0;
+}
+
+.form_item {
+ width: 80%;
+}
+
+.todo {
+ background: #fae3d9;
+ height: 100vh;
+ justify-content: center;
+}
+
+.todo_header {
+ justify-content: center;
+ font-size: x-large;
+ display: flex;
+}
+
+a.prevnext:-webkit-any-link {
+ text-decoration: none;
+ color: #8ac6d1;
+ font-size: 48px;
+}
+
+.calendar_row {
+ flex-direction: row;
+}
+
+.calendar_box {
+ background: #FFFFFF;
+ border: 1px solid #ffb6b9;
+ height: 120px;
+ margin: 0px 0px 0px 0px;
+ width: 120px;
+}
+
+.calendar_title_text {
+ color: #ffb6b9;
+ font-family: Lato;
+ font-size: 14px;
+ font-weight: 900;
+ height: 100%;
+ line-height: 1.4;
+ padding: 5px;
+}
