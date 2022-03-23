@@ -1,4 +1,4 @@
-package com.dmm.task.data.repository;
+package com.dmm.task.repository;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.dmm.task.data.entity.Tasks;
+import com.dmm.task.entity.Tasks;
 
 public interface TasksRepository extends JpaRepository<Tasks, Integer>, JpaSpecificationExecutor<Tasks> {
 

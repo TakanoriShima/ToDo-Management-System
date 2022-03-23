@@ -1,4 +1,4 @@
-package com.dmm.task.data.entity;
+package com.dmm.task.entity;
 
 import java.time.LocalDateTime;
 

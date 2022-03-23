@@ -1,4 +1,4 @@
-package com.dmm.task.data.repository;
+package com.dmm.task.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
